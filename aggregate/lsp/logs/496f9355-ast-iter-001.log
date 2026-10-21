@@ -1,0 +1,7 @@
+[2026-10-21T20:08:47Z] === AST ITERATION 1 START | repo=ibis-project/ibis-bigquery sha=496f9355 ===
+[2026-10-21T20:08:47Z] [iter=1] PHASE START: ast repo=ibis-project/ibis-bigquery sha=496f9355
+[2026-10-21T20:08:47Z] [iter=1] Building AST aggregate chunks
+[2026-10-21T20:09:06Z] [iter=1] AST chunks built count=1 triples=247673
+[2026-10-21T20:09:06Z] [iter=1] AST .complete marker written path=/home/runner/work/forx/forx/storage/aggregate/ast/496f93556d711f1e569ea7e6d9e27aee77a8bb6d/.complete
+[2026-10-21T20:09:06Z] [iter=1] PHASE END: ast elapsed_s=19 elapsed_min=0.3
+[2026-10-21T20:09:06Z] [iter=1] Wrote .next-action.json next_action=enrich path=/home/runner/work/forx/forx/storage/aggregate/.next-action.json
