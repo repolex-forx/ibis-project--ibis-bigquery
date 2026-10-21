@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/ibis-project/ibis-bigquery/commit/496f93556d711f1e569ea7e6d9e27aee77a8bb6d",
       "git:hexsha": "496f93556d711f1e569ea7e6d9e27aee77a8bb6d",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-10-21T20:09:57.183484+00:00"
     },
     {
       "@id": "https://repolex.ai/r/ibis-project/ibis-bigquery/commit/2b92f72304ecb0d3411f0c7ef39baf3e841197a6",
