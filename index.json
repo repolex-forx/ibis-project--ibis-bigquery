@@ -1,0 +1,11 @@
+{
+  "org": "ibis-project",
+  "repo": "ibis-bigquery",
+  "versions": [
+    {
+      "commit": "496f93556d711f1e569ea7e6d9e27aee77a8bb6d",
+      "tag": "",
+      "parsed_at": "2026-10-21T20:09:57.184043+00:00"
+    }
+  ]
+}

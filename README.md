@@ -1,1 +1,125 @@
-Initializing
+# Repolex Knowledge Graph of ibis-project/ibis-bigquery
+
+RDF knowledge graph data for [ibis-project/ibis-bigquery](https://github.com/ibis-project/ibis-bigquery), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download ibis-project/ibis-bigquery
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── 496f93556d711f1e569ea7e6d9e27aee77a8bb6d
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── 496f93556d711f1e569ea7e6d9e27aee77a8bb6d
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 0813f439e120fdcc51ab7f36f3cf72081c4344d5.nq.gz
+│   ├── 0bda7caf38b9ff6c93181bf1ce2659fc18c390de.nq.gz
+│   ├── 13a2396c0173c58d21f1cde7ad8bf32932cd8edb.nq.gz
+│   ├── 18b25b3b0e9f330df6cd64d5ee77b5d5b09a5155.nq.gz
+│   ├── 1cfc388eb193d6be7884cc51258a1d9f3324fd24.nq.gz
+│   ├── 1e03bf4a18689ca632d31f4d444159c6a4f05002.nq.gz
+│   ├── 27ec92e8ca4bab38e1d0409c3a8ea3c8c9c1c249.nq.gz
+│   ├── 2990d98e7ae9e6c15a3f7843b7631183ace09b24.nq.gz
+│   ├── 33e288d77058264aac0d33dce5699ae3a0faa30c.nq.gz
+│   ├── 3e5529aae6c73f619f68e56716bbeb2183f5282d.nq.gz
+│   ├── 45cc760f5afce06ca0a9e5139d6b7abf85589d94.nq.gz
+│   ├── 48e928a12fd1319a2a2bd99431ce37c3fbda41b7.nq.gz
+│   ├── 4cf145c6b3c2c3a8fd8261b795d5670a9bd2942a.nq.gz
+│   ├── 4eb970f6bcee7e5eaf584196a10b4b01401e297b.nq.gz
+│   ├── 508a25165b417995b93735891bc68776ec9c53e9.nq.gz
+│   ├── 5f799af7f4ad6312a10e151746a03127ebf4947b.nq.gz
+│   ├── 662b62a894d6a3e90db22d65045db4eaa7ff9609.nq.gz
+│   ├── 688b3833f8157f1a6169a02ae6785d87bddcf521.nq.gz
+│   ├── 6acad9a9e278b1153c6b213794d956626df73a7a.nq.gz
+│   ├── 6c2aff4880ce137df5e745a6551fa8efeef5f8c7.nq.gz
+│   ├── 6c65a118da3bcbef6b745cc01d2dadc9125817b0.nq.gz
+│   ├── 6ca3fa113516a7d8eca82e1e6f3d012f0456afd7.nq.gz
+│   ├── 6e7cadc5eec1727ca38724d1e97af64a7f61556c.nq.gz
+│   ├── 7c78b9b332b5937401097deaae11cdebd7e81ff4.nq.gz
+│   ├── 7dda63bd0dfe1aeb54f99e1b38330b47608411a3.nq.gz
+│   ├── 7e42538c324af0415ae93884f63cd75a7a79d7a2.nq.gz
+│   ├── 81b7775192dec048e353d2c284b3219d3639d750.nq.gz
+│   ├── 8811a3bf4d1ba4149631d99406cbf70c1d7978ab.nq.gz
+│   ├── 93772a0c421d3beca07282bc59887006331fbb4a.nq.gz
+│   ├── a0772bf9eee424e7fc0ad909e41c753136cb9281.nq.gz
+│   ├── a32a13994d88adf4a98a04c327f169916ab30636.nq.gz
+│   ├── a3e8b03445558f6750aa6d5d7e9d8c60b3e5ba72.nq.gz
+│   ├── b19ee4b77e8929d36a7b6777d3aea5f02079d53e.nq.gz
+│   ├── b40a444ff5c20d3872ad431a5438d1b2a500189a.nq.gz
+│   ├── b8dee6a9f97a152767b180a6df81deae6cc1fd0f.nq.gz
+│   ├── bafa1d315660f5eb88829eb6c0ace11793885678.nq.gz
+│   ├── bb1dd6e9501ae06b6ff7650dd6471b79b4fd6b17.nq.gz
+│   ├── c0d03a0b8a51075bdeb7739ed2c1512b2f315439.nq.gz
+│   ├── d645695673349e3947e8e5ae42332d0ac3164cd7.nq.gz
+│   ├── dac6c8e5d728ce7fde98bf576c079c8ba0ed5c1f.nq.gz
+│   ├── dc8e33de658441f6faed571b27f6b98e49d4cf12.nq.gz
+│   ├── e69de29bb2d1d6434b8b29ae775ad8c2e48c5391.nq.gz
+│   ├── ed2f542a8d285078f56f5279105e29186f57e4ef.nq.gz
+│   ├── f3c73af900f9e5f8b3547e371f08c1b671ab8aab.nq.gz
+│   ├── f7a776b1630be4fcdb4ab587e3d6e1f342a94782.nq.gz
+│   └── fbf5b235881f416c87323564ee45cd172d27b1ed.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── 496f93556d711f1e569ea7e6d9e27aee77a8bb6d.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 54 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[ibis-project/ibis-bigquery](https://github.com/ibis-project/ibis-bigquery)
+
+---
+*Parsed on 2026-10-21 by [repolex](https://repolex.ai)*
